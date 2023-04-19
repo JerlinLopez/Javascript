@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CartQuantity</title>
+
+  </head>
+  <body>
+    <button onclick="
+      console.log(`Cart Quantity:${cartQuantity}`)
+      ">Show Quantity</button>
+
+    <button onclick="
+    // cartQuantity = cartQuantity + 1;
+    // if(cartQuantity > 10){
+    //     alert('Cart is full')
+    //   }else{
+    //     console.log(`Cart Quantity:${cartQuantity}`)
+    //   }
+    updateCartQuantity(1);
+    ">Add to Cart</button>
+
+    <button onclick="
+    //  cartQuantity += 2; //increses 2 and assign to variable
+    //  if(cartQuantity > 10){
+    //     alert('Cart is full')
+    //   }else{
+    //     console.log(`Cart Quantity:${cartQuantity}`)
+    //   }
+    updateCartQuantity(2);
+    ">+2</button>
+
+    <button onclick="
+    // cartQuantity = cartQuantity + 3;
+    // if(cartQuantity > 10){
+    //     alert('Cart is full')
+    //   }else{
+    //     console.log(`Cart Quantity:${cartQuantity}`)
+    //   }
+    updateCartQuantity(3);
+     ">+3</button>
+
+     <button onclick="
+    //  cartQuantity -= 2;
+    //  if(cartQuantity <= 0){
+    //   alert('Not enough items in the cart');
+    //  }else{
+    //   console.log(`Cart Quantity:${cartQuantity}`)
+    //  }
+    updateCartQuantity(-2)
+     ">-2</button>
+
+    <button onclick="
+    cartQuantity = 0;
+    console.log('Cart reseted')
+    console.log(`Cart Quantity:${cartQuantity}`)
+    ">Reset Cart</button>
+
+    <script>
+      let cartQuantity = 0;
+      function updateCartQuantity(increment){
+        cartQuantity = cartQuantity + increment;
+    if(cartQuantity > 10){
+        alert('Cart is full')
+      }else if(cartQuantity < 0){
+        alert('Not enough items in the cart')
+      }
+      else{
+        console.log(`Cart Quantity:${cartQuantity}`)
+      }
+      }
+    </script>
+  </body>
+</html>
