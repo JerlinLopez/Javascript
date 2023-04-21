@@ -8,6 +8,8 @@
   </head>
   <body>
     <button>hello</button>
+
+    <button class="button">Second button</button>
     <script>
       document.title = "DOM";
       console.log(document.body);
@@ -15,6 +17,12 @@
 
        console.log(document.body.innerHTML)
        console.log(document.body.innerText)
+
+       console.log(document.querySelector('button'));
+       document.querySelector('button').innerHTML = 'changed';
+
+      console.log(document.querySelector('.button').innerHTML); 
+        
     </script>
   </body>
 </html>

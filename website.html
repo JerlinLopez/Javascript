@@ -12,8 +12,8 @@
     }
   </style>
 </head>
-<!-- <body>
-  <button class="red-button"
+ <body>
+  <!-- <button class="red-button"
   onclick="
   alert('Good Job');
   ">
@@ -21,9 +21,50 @@
   </button>
 
   <button>
-    Hello World -->
-  <!-- </button>/ -->
+    Hello World 
+   </button>/  -->
+<!-- 
+  <button class="btn-9a">9a</button>
+  <button class="btn-9b">9b</button>
+  
+  <p class="paragraph"></p>
+  
+  <button  class="btn-head" onclick="
+  let button1 = `You chose: ${document.querySelector('.btn-head').innerHTML}`
+  document.querySelector('.paragraph').innerHTML = button1
+  ">Heads</button>
+  <button class="btn-tails" onclick="
+    let button2 = `You chose: ${document.querySelector('.btn-tails').innerHTML}`
+    document.querySelector('.paragraph').innerHTML = button2
+  ">Tails</button> -->
+<!-- 
+  <input class="name-input" type="text" placeholder="Name" onkeydown="
+  enterFunction();
+  ">
+  <button onclick="
+  inputFunction();"
+  >Submit</button> -->
+
+  <input class="input-text" type="text" onkeyup="
+  const text = document.querySelector('.input-text');
+  document.querySelector('.js-choice').innerHTML = text.value;
+  ">
+  <p class="js-choice"></p>
   <script>
+  //  function enterFunction(){
+  //   if(event.key === "Enter"){
+  //   inputFunction();
+  // }
+  //  }
+
+  //  function inputFunction(){
+  //   let name = document.querySelector('.name-input').value
+  // console.log(`Your name:${name}`)
+  //  }
+  //  console.log(document.querySelector('.btn-9a').value)
+  // console.log(document.querySelector('.btn-9b').innerText = '9b done') 
+
+  
     // this code will run first and creates a popup
     // alert('hello');
 

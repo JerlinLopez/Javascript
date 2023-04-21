@@ -9,10 +9,20 @@
 <body>
   <h1>LOGIN PAGE</h1>
   <form action="">
-    <input type="email" placeholder="Email">
+    <input class="email-input" type="email" placeholder="Email">
   </form>
   <button onclick="
+ replaceFunction();
   
   ">Login</button>
+  <script>
+    function replaceFunction(){
+      let emailValue = document.querySelector('.email-input').value
+  if(emailValue === 'jerlinlopez@08082001'){
+    window.location.href = "home.html"
+    // console.log(emailValue);
+    }
+  }
+  </script>
 </body>
 </html>
