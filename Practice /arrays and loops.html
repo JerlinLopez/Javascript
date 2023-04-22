@@ -1,29 +1,266 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Arrays and Loops</title>
-</head>
-<body>
-  <script>
- const myArray = [10,20,30];
- console.log(myArray)
- console.log(myArray[1]);
- myArray[1] = 99
- console.log(myArray)
- console.log(Array.isArray([1,2]));
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arrays and Loops</title>
+  </head>
+  <body>
+    <script>
+      //  const myArray = [10,20,30];
+      //  console.log(myArray)
+      //  console.log(myArray[1]);
+      //  myArray[1] = 99
+      //  console.log(myArray)
+      //  console.log(Array.isArray([1,2]));
 
- console.log(myArray.length)
+      //  console.log(myArray.length)
 
- myArray.push(100);
- console.log(myArray)
+      //  myArray.push(100);
+      //  console.log(myArray)
 
- myArray.splice(0,2)
- console.log(myArray)
+      //  myArray.splice(0,2)
+      //  console.log(myArray)
 
+      // let i= 1
 
-  </script>
-</body>
+      // while(i <= 5){
+      //   console.log(i);
+      //   i++;
+      // }
+
+      // const todolist = [
+      //   'make dinner',
+      //   'wash dishes',
+      //   'wash clothes'
+      // ]
+
+      // for(let index = 0;index <= 2; index++){
+      //    const value =  todolist[index];
+      // }console.log(value)
+
+      // let num = [1,1,3]
+      // let total = 0;
+
+      // for(i=0 ;i < num.length; i++) {
+      //  const number =  num[i]
+      //  total = total + number;
+      // }
+
+      // console.log(total)
+
+      // for(let i=0; i < num.length ;i++){
+      //   num[i] = num[i]*2
+      // }
+      // console.log(num)
+
+      // const numDoubled = [];
+
+      // for(let i=0; i < num.length; i++){
+      //   const number = num[i];
+      //   numDoubled.push(number * 2);
+      // }
+      // console.log(numDoubled)
+
+      // const Array = [10,20,30]
+      // Array[2] = 99;
+      // console.log(Array)
+
+      // function getLastValue(array){
+      // const lastIndex = array.length - 1;
+      // // console.log(lastIndex);
+      // return array [lastIndex];
+      // }
+      // console.log(getLastValue([1,2,3,4,5]));
+
+      // function arraySwap(array){
+      //   let lastIndex = array.length - 1;
+
+      //   let temp = array[lastIndex];
+      //   let firstValue = array[0]
+
+      //   array[0] = temp;
+      //   array[lastIndex] = firstValue ;
+
+      //   return array;
+      // }
+
+      // console.log(arraySwap([1,20,22,24,5]));
+
+      // function arraySwap(array){
+      //   let lastIndex = array.length - 1
+      //  let firstvalue = array[0];
+      //   let lastvalue = array[lastIndex]
+
+      //   array[lastIndex] = firstvalue;
+      //   array[0] = lastvalue;
+      //   return array;
+      // }
+      // console.log(arraySwap([1,2,3,4,6])) ;
+
+      // for(i = 0; i <= 10; i++){
+      //   if(i % 2 === 0){
+      //     console.log(i);
+      //   }
+      // }
+
+      // let i = 5;
+      // while(i >= 0){
+      //   console.log(i);
+      //   i--;
+      // }
+
+      // for(i = 5 ; i >= 0 ; i--){
+      //   console.log(i);
+      // }
+
+      // const myArray = [3,5,7];
+      // const newArray = [];
+
+      // for(i = 0; i < myArray.length; i++){
+      //   // const num = myArray[i]+1;
+      //   newArray.push( myArray[i]+1);
+      // }
+      // console.log(newArray)
+
+      // function myArray(array) {
+      //   let  newArray = [];
+      //   for (i = 0; i < array.length; i++) {
+      //     newArray.push(array[i] + 1);
+      //   }
+      //   return newArray;
+      // }
+      // console.log(myArray([1, 3, 5]));
+
+      // function minMax(nums) {
+      //   const result = {
+      //     min: nums[0],
+      //     max: nums[0]
+      //   };
+
+      //   for (let i = 0; i < nums.length; i++) {
+      //     const value = nums[i];
+      //     if (result.min === null || value < result.min) {
+      //       result.min = value;
+      //     }
+      //     if (result.max === null || value > result.max) {
+      //       result.max = value;
+      //     }
+      //   }
+
+      //   return result;
+      // }
+
+      // console.log(minMax([1, -3, 5]));
+      // console.log(minMax([-2, 3, -5, 7, 10]));
+
+      // console.log(minMax([]));
+      // console.log(minMax([3]));
+
+      // const nums = [1,2,3]
+      //   const numDoubled = [];
+
+      // for(let i=0; i < num.length; i++){
+      //   const number = num[i];
+      //   numDoubled.push(number * 2);
+      // }
+      // console.log(numDoubled)
+
+      // const Array1 = ['hello' ,'home' ,'search'];
+
+      // for(i=0 ;i <= Array1.length ;i++){
+      //   if(Array1[i] === 'search'){
+      //     console.log(i+1);
+      //     console.log('2');
+      //     break;
+      //   }
+
+      // }
+
+      //   function findIndex(array ,word){
+      //     for(i = 0 ;i < array.length; i++){
+      //       if(array[i] === word){
+      //         return i+1;
+      //       }
+      //     }
+      //   }
+      //  console.log(findIndex(['red','blue','green','red'],'red'));
+      // const result = [];
+      // function removeEgg(foods) {
+      //   eggsRemoved = 0;
+      //   for (i = 0; i <= foods.length; i++) {
+      //     if (foods[i] === "egg" && eggsRemoved < 2) {
+      //       eggsRemoved++;
+      //       continue;
+      //     }
+      //     result.push(foods[i]);
+      //   }
+      //   console.log(result);
+      // }
+
+      // removeEgg(["egg", "apple", "egg", "egg", "ham"]);
+
+      // function removeEggReversely(foods){
+      //   reversed = foods.slice()
+      //   reversed.reverse()
+      //   const result = [];
+      //   let eggsRemoved = 0
+      //   for(i = 0; i <= reversed.length; i++){
+      //     if(foods[i] === 'egg' && eggsRemoved < 2){
+      //       eggsRemoved++;
+      //       continue;
+      //     }
+      //    result.push(foods[i])
+      //   }
+
+      //   console.log(result)
+      // }
+
+      // removeEggReversely(["egg", "apple", "egg", "egg", "ham"]);
+      // console.log(foods  )
+      
+      
+      // for(i = 1; i <= 20 ;i++){
+      //   if(i%3 === 0){
+      //     console.log('fizz')
+      //   }else if(i%5 === 0){
+      //     console.log('buzz')
+      //   }else if(i%3 === 0 && i%5 ===0){
+      //     console.log('fizzBuzz')
+      //   }else{
+      //     console.log(i)
+
+      //   }
+      // }
+
+     
+      function findIndex(array, word) {
+        for (let i = 0; i < array.length; i++) {
+          if (array[i] === word) {
+            return i;
+          }
+        }
+
+        return -1;
+      }
+
+      function unique(array) {
+        const result = [];
+
+        for (let i = 0; i < array.length; i++) {
+          const word = array[i];
+          if (findIndex(result, word) === -1) {
+            result.push(word);
+          }
+        }
+
+        return result;
+      }
+
+      console.log(unique(['green', 'red', 'blue', 'red']));
+      console.log(unique(['red', 'green', 'green', 'red']));
+    
+    </script>
+  </body>
 </html>
