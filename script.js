@@ -5,3 +5,5 @@ window.location.href = "home.html"
 // console.log(emailValue);
 }
 }
+
+
